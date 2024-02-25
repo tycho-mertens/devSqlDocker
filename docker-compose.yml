@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  dev_db:
+    container_name: dev_env_db
+    image: dev-sql-docker
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=devPassword123
